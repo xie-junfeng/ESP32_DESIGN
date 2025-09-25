@@ -1,0 +1,32 @@
+git仓库创建
+1、创建用户名和邮箱
+git config --global user.name "xiejunbo"
+git config --global user.email "815195596@qq.com"
+2、创建文件夹
+mkdir my-project
+cd my-project
+git init
+3、创建
+echo "Hello Git" > readme.txt
+git add readme.txt
+git commit -m "第一次提交"
+
+4、提交
+git remote add origin https://github.com/xie-junfeng/FPGA_TOW.git
+git push -u origin main
+git add readme.txt
+git add -all
+git commit -m "commit message"
+git push
+
+
+5、下载
+git clone https://github.com/xie-junfeng/FPGA_TOW.git
+
+文件比较
+git diff
+问题解决
+git config --global http.sslbackend schannel
+
+查看状态差异
+ git status -s
